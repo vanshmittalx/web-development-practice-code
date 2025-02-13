@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .main{
+            background-color: rgba(192, 232, 255, 0.521);
+            height: 100vh;
+        }
+        .navbar{
+            display: flex;
+            background-color: rgb(172, 229, 253);
+            height: 3em;
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+        }
+        ul{
+            display: flex;
+            position:sticky
+        }
+        li {
+            list-style: none;
+            padding: 15px 30px;
+            
+        }
+        li a {
+            text-decoration: none;
+            color: rgba(68, 186, 255, 0.982);
+        }
+        li a:hover {
+            color: blue;
+        }
+        .cards {
+            display: flex;
+            margin: 40px 0px;
+        }
+        .card1 {
+            left: 20vh;
+            background-color: pink;
+        }
+        .card2 {
+            left: 70vh;
+            background-color: purple;
+        }
+        .cardall{
+            position: relative;
+            /* border-left: 2px solid black; */
+            padding: 40px;
+            height: 50vh;
+            min-width: 20vw;
+            box-shadow: 2px 4px 2px #888888;
+        }
+        .banner{
+            display:flex;
+            justify-content: center;
+            background-color: black;
+            height: 50vh;
+        }
+        .box{
+            box-sizing: border-box;
+            border-radius: 100px;
+            margin: 80px 0px;
+            padding: 40px;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 4em;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="cards">
+            <div class="card1 cardall">
+                I am card 1
+            </div>
+            <div class="card2 cardall">
+                I am card 2
+            </div>
+        </div>
+    </div>
+        <div class="banner">
+        <div class="box">
+            Welcome to Sigma web dev course
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --color: rgb(196, 174, 111);
+            --seccolor: pink;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 34px;
+        }
+        ul li:first-child{
+            background-color: var(--color, pink);
+        }
+        .nav {
+            background-color: var(--seccolor);
+            box-shadow: 2px 4px 2px #eb87de;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+</body>
+</html>
