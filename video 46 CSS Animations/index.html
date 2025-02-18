@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 30vw;
+            height: 50vh;
+            background-color: green;
+        }
+        .box{
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            /* animation-name: anime;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1s;
+            animation-delay: 0ms;
+            animation-iteration-count: 3;
+            animation-direction: alternate-reverse; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: anime 3s ease-in-out 1s forwards;
+        }
+        @keyframes anime {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(50vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>
